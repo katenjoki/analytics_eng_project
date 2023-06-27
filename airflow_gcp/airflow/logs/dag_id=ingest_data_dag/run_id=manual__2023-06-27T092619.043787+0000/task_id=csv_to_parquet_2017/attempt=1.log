@@ -1,0 +1,16 @@
+[2023-06-27T09:26:56.062+0000] {logging_mixin.py:149} INFO - Changing /opt/***/logs/dag_id=ingest_data_dag/run_id=manual__2023-06-27T09:26:19.043787+00:00/task_id=csv_to_parquet_2017 permission to 509
+[2023-06-27T09:26:56.151+0000] {logging_mixin.py:149} INFO - Changing /opt/***/logs/dag_id=ingest_data_dag/run_id=manual__2023-06-27T09:26:19.043787+00:00/task_id=csv_to_parquet_2017 permission to 509
+[2023-06-27T09:26:56.231+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ingest_data_dag.csv_to_parquet_2017 manual__2023-06-27T09:26:19.043787+00:00 [queued]>
+[2023-06-27T09:26:56.259+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ingest_data_dag.csv_to_parquet_2017 manual__2023-06-27T09:26:19.043787+00:00 [queued]>
+[2023-06-27T09:26:56.261+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2023-06-27T09:26:56.303+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): csv_to_parquet_2017> on 2023-06-27 09:26:19.043787+00:00
+[2023-06-27T09:26:56.316+0000] {standard_task_runner.py:57} INFO - Started process 169 to run task
+[2023-06-27T09:26:56.326+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ingest_data_dag', 'csv_to_parquet_2017', 'manual__2023-06-27T09:26:19.043787+00:00', '--job-id', '532', '--raw', '--subdir', 'DAGS_FOLDER/ingest_data_dag.py', '--cfg-path', '/tmp/tmpg74lcnx9']
+[2023-06-27T09:26:56.332+0000] {standard_task_runner.py:85} INFO - Job 532: Subtask csv_to_parquet_2017
+[2023-06-27T09:26:56.444+0000] {logging_mixin.py:149} INFO - Changing /opt/***/logs/dag_id=ingest_data_dag/run_id=manual__2023-06-27T09:26:19.043787+00:00/task_id=csv_to_parquet_2017 permission to 509
+[2023-06-27T09:26:56.465+0000] {task_command.py:410} INFO - Running <TaskInstance: ingest_data_dag.csv_to_parquet_2017 manual__2023-06-27T09:26:19.043787+00:00 [running]> on host c72d474eb810
+[2023-06-27T09:26:56.677+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ingest_data_dag' AIRFLOW_CTX_TASK_ID='csv_to_parquet_2017' AIRFLOW_CTX_EXECUTION_DATE='2023-06-27T09:26:19.043787+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-27T09:26:19.043787+00:00'
+[2023-06-27T09:26:56.841+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-06-27T09:26:56.880+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=ingest_data_dag, task_id=csv_to_parquet_2017, execution_date=20230627T092619, start_date=20230627T092656, end_date=20230627T092656
+[2023-06-27T09:26:56.979+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-06-27T09:26:57.157+0000] {taskinstance.py:2651} INFO - 1 downstream tasks scheduled from follow-on schedule check
