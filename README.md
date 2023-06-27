@@ -1,14 +1,13 @@
 #  Data Pipeline using Airflow(docker), GCP, BigQuery and DBT.
 
-This project is a continuation of the [Simple ETL Data Pipeline](https://github.com/katenjoki/simple_data_pipeline)
-
-If you're interested, check out this repo where I [ingested data into local PostgreSQL using airflow and docker](https://github.com/katenjoki/postgresql_airflow/tree/master) using the same data.
+This project is a continuation of the [Simple ETL Data Pipeline](https://github.com/katenjoki/simple_data_pipeline).
+If you're interested, you can also check out this repo where I [ingested data into local PostgreSQL using airflow and docker](https://github.com/katenjoki/postgresql_airflow/tree/master) using the same data.
 
 # Table of contents
 
 - [Table of Contents](#Table-Of-Contents)
 - [Project Summary](#project-summary)
-- [Pipeline Workflow](#pipleine-workflow)
+- [Pipeline Workflow](#pipeline-workflow)
 - [Prerequisites](#prerequisites)
 - [Installation and Setup](#installation-and-setup)
 - [Running Airflow](#running-airflow)
