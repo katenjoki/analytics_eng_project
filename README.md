@@ -48,11 +48,11 @@ You may need to set the memory for your Docker Engine to a minimum of 5GB otherw
 ```
 git clone https://github.com/katenjoki/airflow_gcp.git
 ```
-2. Rename your gcp-service-accounts-credentials file to google_maize_credentials.json & store it in your $HOME directory. 
+2. Rename your gcp-service-accounts-credentials file to google_production_credentials.json & store it in your $HOME directory. 
 If you choose to rename it as something else e.g 'google_credentials.json', make sure this reflects on the docker-compose.yaml file as well, otherwise it won't run.
 ```
 cd ~ && mkdir -p ~/.google/credentials/
-mv <path/to/your/service-account-authkeys>.json ~/.google/credentials/google_maize_credentials.json
+mv <path/to/your/service-account-authkeys>.json ~/.google/credentials/google_production_credentials.json
 ```
 3. Open the .env file and review/update the following environment variables: <br>
 * To set/change the value of the AIRFLOW_UID variable to your user's UID (User ID) run the following command. For Windows, use MINGW/GitBash and execute the same command.
@@ -88,7 +88,7 @@ When the workflow runs successfully, this is what you should see:
 ![airflow](assets/airflow.PNG)
 
 Next, go to your Google Cloud console and select 'Cloud Storage' then 'Buckets'.
-You should see the 'maize_2017.parquet' and 'maize_2018.parquet' in the 'raw/' folder.
+You should see the 'production_2017.parquet' and 'production_2018.parquet' in the 'raw/' folder.
 ![cloud_storage](assets/cloud_storage.PNG)
 
 To perform complex data analysis and generate insights, select 'BigQuery' where you should see the loaded datasets as shown below.
