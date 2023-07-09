@@ -58,7 +58,7 @@ mv <path/to/your/service-account-authkeys>.json ~/.google/credentials/google_pro
     echo -e "AIRFLOW_UID=$(id -u)" > .env
     ```
 
-4. Edit the following in the environment section of the docker_compose.yaml file to reflect your project's details after [setting up your GCS infrastructure with Terraform](GCP_Terraform/terraform/READme.md):
+4. Edit the following in the environment section of the docker_compose.yaml file to reflect your project's details after [setting up your GCS infrastructure with Terraform](GCP_Terraform/terraform/README.md):
 ![environment](assets/environment.PNG)
 5. Navigate to the airflow folder.
 ```
