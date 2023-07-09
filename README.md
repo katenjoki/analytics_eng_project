@@ -1,7 +1,4 @@
-#  Data Pipeline using Airflow(docker), GCP, BigQuery and DBT.
-
-This project is a continuation of the [Simple ETL Data Pipeline](https://github.com/katenjoki/simple_data_pipeline).
-If you're interested, you can also check out this repo where I [ingested data into local PostgreSQL using airflow and docker](https://github.com/katenjoki/postgresql_airflow/tree/master) using the same data.
+#  Data Pipeline using Airflow, GCP, BigQuery and DBT.
 
 # Table of contents
 
@@ -15,7 +12,8 @@ If you're interested, you can also check out this repo where I [ingested data in
 # Project Summary
 ![flowchart.png](assets/flowchart.png) 
 
-The goal of this project is to develop a scalable data pipeline that **extracts**, **tweaks**, **loads**, and **transforms** Kenya's 2017 and 2018 Crop Production data by Counties data from the [Kilimo Data Portal](http://kilimodata.org/dataset/kenya-maize-production-by-counties/resource/63fa57a5-a7c2-40e1-a728-f9546fa383ef) using Airflow, Google Cloud Platform (GCP), and BigQuery. 
+The goal of this project is to develop a scalable data pipeline that **extracts**, **tweaks**, **loads**, and **transforms** Kenya's 2017 and 2018 Crop Production data by Counties data from the [Kilimo Data Portal](http://kilimodata.org/dataset/kenya-maize-production-by-counties/resource/63fa57a5-a7c2-40e1-a728-f9546fa383ef) using Airflow, Google Cloud Platform (GCP), and BigQuery.
+While it would have been ideal to work with more recent data, the availability of local public datasets can sometimes limit our options. However, despite the data being a few years old, I believe it is still relevant to this project.
 
 Key Components:
 
@@ -27,7 +25,7 @@ Key Components:
 
 4. BigQuery: BigQuery, a **data warehouse** fully-managed by Google Cloud, will be the target storage and analytics platform. 
 
-5. DBT (Data Build Tool): DBT is a SQL-based framework which will be used for data transformation and modeling. 
+5. DBT (Data Build Tool): DBT is a SQL-based framework which will be used for data transformation and modeling. Check out my [dbt_analytics repo](https://github.com/katenjoki/dbt_analytics/tree/master) to see how I created **data models** to transform the data. 
 
 # Pipeline Workflow
 
@@ -91,5 +89,8 @@ Next, go to your Google Cloud console and select 'Cloud Storage' then 'Buckets'.
 You should see the 'production_2017.parquet' and 'production_2018.parquet' in the 'raw/' folder.
 ![cloud_storage](assets/cloud_storage.PNG)
 
-To perform complex data analysis and generate insights, select 'BigQuery' where you should see the loaded datasets as shown below.
+To perform complex data analysis and generate insights, select 'BigQuery' in your Google Cloud console where you should see the loaded datasets as shown below.
 ![big_query](assets/bq.PNG)
+
+
+If you're interested check out this repo where I [ingested data into local PostgreSQL using airflow and docker](https://github.com/katenjoki/postgresql_airflow/tree/master) using the same data.
