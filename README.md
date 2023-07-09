@@ -21,11 +21,11 @@ Key Components:
 
 2. Docker: Docker will be used to containerize the Airflow environment, ensuring reproducible execution across different environments.
 
-3. Google Cloud Platform (GCP): GCP will be used as the cloud infrastructure by providing services and resources that integrate seamlessly with Airflow and facilitate data processing and **storage**.
+3. Google Cloud Platform (GCP): GCP will be used as the cloud infrastructure by providing services and resources that integrate seamlessly with Airflow and BigQuery, and facilitate data **storage**.
 
 4. BigQuery: BigQuery, a **data warehouse** fully-managed by Google Cloud, will be the target storage and analytics platform. 
 
-5. DBT (Data Build Tool): DBT is a SQL-based framework which will be used for data transformation and modeling. Check out my [dbt_analytics repo](https://github.com/katenjoki/dbt_analytics/tree/master) to see how I created **data models** to transform the data. 
+5. DBT (Data Build Tool): DBT is a SQL-based framework which will be used for data transformation and modeling, by connecting to our BigQuery data warehouse. Check out my [dbt_analytics repo](https://github.com/katenjoki/dbt_analytics/tree/master) to see how I created **data models** and **macros** to transform the data. 
 
 # Pipeline Workflow
 
@@ -33,7 +33,7 @@ Key Components:
 
 2. Data Loading: Extracted data will be loaded into BigQuery, leveraging GCP's Cloud Storage.
 
-3. Data Transformation: DBT will be used to transform and model the loaded data by defining SQL-based transformations, aggregations, and other data manipulations.
+3. Data Transformation: DBT will be used to transform and model the loaded data by defining SQL-based transformations, aggregations, and other manipulations to the data stored in our BigQuery warehouse.
 
 To do this project, you have to setup your google cloud account. You can find steps and reference videos on how to do this in the [Terraform READme](GCP_Terraform/terraform/READme.md).
 
