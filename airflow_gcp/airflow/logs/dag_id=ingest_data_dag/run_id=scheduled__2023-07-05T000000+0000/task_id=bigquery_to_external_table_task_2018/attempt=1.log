@@ -1,0 +1,17 @@
+[2023-07-06T11:58:17.554+0000] {logging_mixin.py:149} INFO - Changing /opt/***/logs/dag_id=ingest_data_dag/run_id=scheduled__2023-07-05T00:00:00+00:00/task_id=bigquery_to_external_table_task_2018 permission to 509
+[2023-07-06T11:58:17.700+0000] {logging_mixin.py:149} INFO - Changing /opt/***/logs/dag_id=ingest_data_dag/run_id=scheduled__2023-07-05T00:00:00+00:00/task_id=bigquery_to_external_table_task_2018 permission to 509
+[2023-07-06T11:58:17.789+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ingest_data_dag.bigquery_to_external_table_task_2018 scheduled__2023-07-05T00:00:00+00:00 [queued]>
+[2023-07-06T11:58:17.824+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ingest_data_dag.bigquery_to_external_table_task_2018 scheduled__2023-07-05T00:00:00+00:00 [queued]>
+[2023-07-06T11:58:17.825+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2023-07-06T11:58:17.894+0000] {taskinstance.py:1327} INFO - Executing <Task(BigQueryCreateExternalTableOperator): bigquery_to_external_table_task_2018> on 2023-07-05 00:00:00+00:00
+[2023-07-06T11:58:17.919+0000] {standard_task_runner.py:57} INFO - Started process 148 to run task
+[2023-07-06T11:58:17.946+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ingest_data_dag', 'bigquery_to_external_table_task_2018', 'scheduled__2023-07-05T00:00:00+00:00', '--job-id', '563', '--raw', '--subdir', 'DAGS_FOLDER/ingest_data_dag.py', '--cfg-path', '/tmp/tmpmwop21cw']
+[2023-07-06T11:58:17.955+0000] {standard_task_runner.py:85} INFO - Job 563: Subtask bigquery_to_external_table_task_2018
+[2023-07-06T11:58:18.115+0000] {logging_mixin.py:149} INFO - Changing /opt/***/logs/dag_id=ingest_data_dag/run_id=scheduled__2023-07-05T00:00:00+00:00/task_id=bigquery_to_external_table_task_2018 permission to 509
+[2023-07-06T11:58:18.138+0000] {task_command.py:410} INFO - Running <TaskInstance: ingest_data_dag.bigquery_to_external_table_task_2018 scheduled__2023-07-05T00:00:00+00:00 [running]> on host 078f56016118
+[2023-07-06T11:58:18.452+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ingest_data_dag' AIRFLOW_CTX_TASK_ID='bigquery_to_external_table_task_2018' AIRFLOW_CTX_EXECUTION_DATE='2023-07-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-07-05T00:00:00+00:00'
+[2023-07-06T11:58:18.460+0000] {crypto.py:83} WARNING - empty cryptography key - values will not be stored encrypted.
+[2023-07-06T11:58:18.462+0000] {base.py:73} INFO - Using connection ID 'google_cloud_default' for task execution.
+[2023-07-06T11:58:21.365+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=ingest_data_dag, task_id=bigquery_to_external_table_task_2018, execution_date=20230705T000000, start_date=20230706T115817, end_date=20230706T115821
+[2023-07-06T11:58:21.437+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-07-06T11:58:21.481+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

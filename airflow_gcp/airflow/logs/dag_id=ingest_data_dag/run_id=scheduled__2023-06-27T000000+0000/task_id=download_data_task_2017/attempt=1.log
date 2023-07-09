@@ -1,0 +1,20 @@
+[2023-07-06T11:57:41.383+0000] {logging_mixin.py:149} INFO - Changing /opt/***/logs/dag_id=ingest_data_dag/run_id=scheduled__2023-06-27T00:00:00+00:00/task_id=download_data_task_2017 permission to 509
+[2023-07-06T11:57:41.534+0000] {logging_mixin.py:149} INFO - Changing /opt/***/logs/dag_id=ingest_data_dag/run_id=scheduled__2023-06-27T00:00:00+00:00/task_id=download_data_task_2017 permission to 509
+[2023-07-06T11:57:41.643+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ingest_data_dag.download_data_task_2017 scheduled__2023-06-27T00:00:00+00:00 [queued]>
+[2023-07-06T11:57:41.723+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ingest_data_dag.download_data_task_2017 scheduled__2023-06-27T00:00:00+00:00 [queued]>
+[2023-07-06T11:57:41.725+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2023-07-06T11:57:41.816+0000] {taskinstance.py:1327} INFO - Executing <Task(BashOperator): download_data_task_2017> on 2023-06-27 00:00:00+00:00
+[2023-07-06T11:57:41.841+0000] {standard_task_runner.py:57} INFO - Started process 65 to run task
+[2023-07-06T11:57:41.866+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ingest_data_dag', 'download_data_task_2017', 'scheduled__2023-06-27T00:00:00+00:00', '--job-id', '549', '--raw', '--subdir', 'DAGS_FOLDER/ingest_data_dag.py', '--cfg-path', '/tmp/tmp3g_7u9we']
+[2023-07-06T11:57:41.891+0000] {standard_task_runner.py:85} INFO - Job 549: Subtask download_data_task_2017
+[2023-07-06T11:57:42.090+0000] {logging_mixin.py:149} INFO - Changing /opt/***/logs/dag_id=ingest_data_dag/run_id=scheduled__2023-06-27T00:00:00+00:00/task_id=download_data_task_2017 permission to 509
+[2023-07-06T11:57:42.113+0000] {task_command.py:410} INFO - Running <TaskInstance: ingest_data_dag.download_data_task_2017 scheduled__2023-06-27T00:00:00+00:00 [running]> on host 078f56016118
+[2023-07-06T11:57:42.503+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ingest_data_dag' AIRFLOW_CTX_TASK_ID='download_data_task_2017' AIRFLOW_CTX_EXECUTION_DATE='2023-06-27T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-06-27T00:00:00+00:00'
+[2023-07-06T11:57:42.514+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2023-07-06T11:57:42.518+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'curl -sS http://kilimodata.org/datastore/dump/40f681c0-20e6-4dc4-9c70-dcdb19b8940e?bom=True > /opt/***/production_2017.csv']
+[2023-07-06T11:57:42.556+0000] {subprocess.py:86} INFO - Output:
+[2023-07-06T11:57:44.094+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-07-06T11:57:44.185+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=ingest_data_dag, task_id=download_data_task_2017, execution_date=20230627T000000, start_date=20230706T115741, end_date=20230706T115744
+[2023-07-06T11:57:44.266+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-07-06T11:57:44.386+0000] {taskinstance.py:2651} INFO - 1 downstream tasks scheduled from follow-on schedule check
