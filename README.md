@@ -35,7 +35,7 @@ Key Components:
 
 3. Data Transformation: DBT will be used to transform and model the loaded data by defining SQL-based transformations, aggregations, and other manipulations to the data stored in our BigQuery warehouse.
 
-To do this project, you have to setup your google cloud account. You can find steps and reference videos on how to do this in the [Terraform READme](airflow_gcp/GCP_Terraform/terraform/READme.md).
+To do this project, you have to setup your google cloud account. You can find steps and reference videos on how to do this in the [Terraform READme](airflow_gcp/GCP_Terraform/terraform/README.md).
 
 # Prerequisites
 Docker: Make sure you have Docker installed on your machine. You can download and install Docker from the official website: https://www.docker.com
