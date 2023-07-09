@@ -12,7 +12,7 @@
 # Project Summary
 ![flowchart.png](assets/flowchart.png) 
 
-The goal of this project is to develop a scalable data pipeline that **extracts**, **tweaks**, **loads**, and **transforms** Kenya's 2017 and 2018 Crop Production data by Counties data from the [Kilimo Data Portal](http://kilimodata.org/dataset/kenya-maize-production-by-counties/resource/63fa57a5-a7c2-40e1-a728-f9546fa383ef) using Airflow, Google Cloud Platform (GCP), and BigQuery.
+The goal of this project is to develop a scalable data pipeline that **extracts**, **tweaks**, **loads**, and **transforms** focusing on Kenya's 2017 and 2018 Crop Production data by Counties from the [Kilimo Data Portal](http://kilimodata.org/dataset/kenya-maize-production-by-counties/resource/63fa57a5-a7c2-40e1-a728-f9546fa383ef) using Airflow, Google Cloud Platform (GCP), BigQuery and DBT.
 While it would have been ideal to work with more recent data, the availability of local public datasets can sometimes limit our options. However, despite the data being a few years old, I believe it is still relevant to this project.
 
 Key Components:
