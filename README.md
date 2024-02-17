@@ -21,7 +21,7 @@ Key Components:
 
 2. Docker: Docker will be used to containerize the Airflow environment, ensuring reproducible execution across different environments.
 
-3. Google Cloud Platform (GCP): GCP will be used as the cloud infrastructure by providing services and resources that integrate seamlessly with Airflow and BigQuery, and facilitate data **storage**.
+3. Google Cloud Platform (GCP): GCP will be used as the cloud infrastructure by providing services and resources that integrate seamlessly with Airflow and BigQuery, and facilitate data **storage** through Google Cloud Storage.
 
 4. BigQuery: BigQuery, a **data warehouse** fully-managed by Google Cloud, will be the target storage and analytics platform. 
 
