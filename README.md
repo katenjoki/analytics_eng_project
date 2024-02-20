@@ -44,7 +44,7 @@ You may need to set the memory for your Docker Engine to a minimum of 5GB otherw
 # Installation and Setup
 1. Git clone the repo.
 ```
-git clone https://github.com/katenjoki/airflow_gcp.git
+git clone https://github.com/katenjoki/analytics_eng.git
 ```
 2. Rename your gcp-service-accounts-credentials file to google_production_credentials.json & store it in your $HOME directory. 
 If you choose to rename it as something else e.g 'google_credentials.json', make sure this reflects on the docker-compose.yaml file as well, otherwise it won't run.
